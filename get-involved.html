@@ -46,6 +46,12 @@
       </ul>
     </div>
   </nav>
+
+<!-- LANGUAGE TOGGLE -->
+<div class="language-toggle text-left pl-4 pt-2">
+  <button id="langToggle" class="lang-btn">Leia em Português</button>
+</div>
+
 <!-- HEADER -->
  <header class="page-header text-center mt-5 pt-5">
   <h1>Get Involved</h1>
@@ -64,5 +70,40 @@
     <hr>
     © 2025 Breaking The Chains · Educational Project
   </footer>
+
+<!-- SCRIPT FOR LANGUAGE TOGGLE -->
+<script>
+  const translations = {
+    en: {
+      button: "Leia em Português",
+      header: "Get Involved",
+      paragraph: "Everyone has a role to play in ending human trafficking. Learn the signs, spread awareness, and support organizations working to protect victims and prevent exploitation. Small actions create big change—get involved today.",
+      footer: "© 2025 Breaking The Chains · Educational Project"
+    },
+    pt: {
+      button: "Read in English",
+      header: "Envolva-se",
+      paragraph: "Todos têm um papel a desempenhar no combate ao tráfico humano. Aprenda os sinais, espalhe a conscientização e apoie organizações que trabalham para proteger as vítimas e prevenir a exploração. Pequenas ações geram grandes mudanças—envolva-se hoje.",
+      footer: "© 2025 Breaking The Chains · Projeto Educacional"
+    }
+  };
+
+  let currentLang = 'en';
+  const button = document.getElementById('langToggle');
+
+  button.addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'pt' : 'en';
+    const lang = translations[currentLang];
+
+    // Update text elements
+    document.querySelector('header h1').textContent = lang.header;
+    document.querySelector('main p').textContent = lang.paragraph;
+    document.querySelector('footer').innerHTML = `<hr>${lang.footer}`;
+
+    // Update button label
+    button.textContent = lang.button;
+  });
+</script>
+
 </body>
 </html>

@@ -67,3 +67,26 @@ body {
 h1, h2, h3, .page-header h1, .banner-text {
   font-family: 'Anton', sans-serif;
 }
+
+/* Language Toggle Styling */
+.language-toggle {
+  position: fixed;
+  top: 70px; /* sits right below the navbar */
+  left: 20px; /* aligned to the left side */
+  z-index: 1050; /* ensures visibility above content */
+}
+
+.lang-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: 'PT Serif', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background-color: #e2e6ea;
+  border-color: #999;
+}
