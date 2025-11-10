@@ -114,3 +114,17 @@ h1, h2, h3, .page-header h1, .banner-text {
   background-color: #e2e6ea;
   border-color: #999;
 }
+
+.btn-primary {
+  background-color: #1B9AAA !important;
+  border-color: #1B9AAA !important;
+  font-family: 'PT Serif', serif;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #88D498 !important; 
+  border-color: #88D498 !important;
+  color: #0A3D62 !important;
+}
