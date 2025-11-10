@@ -12,7 +12,31 @@ body {
 }
 
 .navbar .nav-link:hover {
-    color: #88F498 !important;
+    color: #C8E0F4 !important;
+}
+
+.nav-item.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  left: 0 !important;
+  right: auto !important;
+  margin-top: 0.5rem;
+  background-color: #F5F5F5;
+  border: 1px solid #C8E0F4;
+}
+
+.dropdown-item {
+  color: #0A3D62; 
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #C8E0F4; 
+  color: #0A3D62;
+  text-decoration: none;
 }
 
 h1 {
