@@ -128,3 +128,11 @@ h1, h2, h3, .page-header h1, .banner-text {
   border-color: #88D498 !important;
   color: #0A3D62 !important;
 }
+
+section img {
+  max-width: 900px; /* keeps it readable on large screens */
+  border: 2px solid #C8E0F4; /* subtle sky blue border */
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+}
