@@ -10,6 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Fixed NAVBAR Location -->
+  <style>
+    .navbar {
+      position: relative;
+      z-index: 3000;
+    }
+  </style>
+
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -46,21 +54,62 @@
       </ul>
     </div>
   </nav>
+
+<!-- LANGUAGE TOGGLE BUTTON -->
+<div class="language-toggle text-left pl-4 pt-2">
+  <button id="langToggle" class="lang-btn">Ver em Português</button>
+</div>
+
 <!-- HEADER -->
- <header class="page-header text-center mt-5 pt-5">
-  <h1>Stories of Hope and Awareness</h1>
+<header class="page-header text-center mt-5 pt-5">
+  <h1 id="storiesHeader">Stories of Hope and Awareness</h1>
 </header>
 
   <!-- MAIN CONTENT -->
   <main class="container py-5">
-    <p>Learn about real stories that highlight the fight against human trafficking in Brazil. 
-  Each story reveals how awareness, education, and community involvement can change lives.</p>
+    <p id="storiesParagraph">
+      Learn about real stories that highlight the fight against human trafficking in Brazil.
+      Each story reveals how awareness, education, and community involvement can change lives.
+    </p>
   </main>
 
   <!-- FOOTER -->
-  <footer class="container py-4 text-muted small">
+  <footer class="container py-4 text-muted small" id="footerText">
     <hr>
     © 2025 Breaking The Chains · Educational Project
   </footer>
+
+<!-- LANGUAGE TOGGLE SCRIPT -->
+<script>
+const translations = {
+  en: {
+    button: "Ver em Português",
+    header: "Stories of Hope and Awareness",
+    paragraph: "Learn about real stories that highlight the fight against human trafficking in Brazil. Each story reveals how awareness, education, and community involvement can change lives.",
+    footer: "© 2025 Breaking The Chains · Educational Project"
+  },
+
+  pt: {
+    button: "View in English",
+    header: "Histórias de Esperança e Conscientização",
+    paragraph: "Conheça histórias reais que destacam a luta contra o tráfico de pessoas no Brasil. Cada relato mostra como a conscientização, a educação e o envolvimento comunitário podem transformar vidas.",
+    footer: "© 2025 Breaking The Chains · Projeto Educacional"
+  }
+};
+
+let currentLang = 'en';
+const btn = document.getElementById("langToggle");
+
+btn.addEventListener("click", () => {
+  currentLang = currentLang === "en" ? "pt" : "en";
+  const t = translations[currentLang];
+
+  btn.textContent = t.button;
+  document.getElementById("storiesHeader").textContent = t.header;
+  document.getElementById("storiesParagraph").textContent = t.paragraph;
+  document.getElementById("footerText").innerHTML = `<hr>${t.footer}`;
+});
+</script>
+
 </body>
 </html>
