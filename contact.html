@@ -10,6 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Fixed NAVBAR Location -->
+  <style>
+    .navbar {
+      position: relative;
+      z-index: 3000;
+    }
+  </style>
+
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -22,7 +30,7 @@
     <a class="navbar-brand" href="index.html">Logo</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" 
-            data-target="#myNavMenu" aria-controls="myNavMenu" 
+            data-target="#myNavMenu" aria-controls="#myNavMenu" 
             aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -46,39 +54,111 @@
       </ul>
     </div>
   </nav>
+
+<!-- LANGUAGE TOGGLE -->
+<div class="language-toggle text-left pl-4 pt-2">
+  <button id="langToggle" class="lang-btn">Ver em Português</button>
+</div>
+
 <!-- HEADER -->
  <header class="page-header text-center mt-5 pt-5">
-  <h1>Contact Us</h1>
+  <h1 id="headerText">Contact Us</h1>
 </header>
 
   <!-- MAIN CONTENT -->
   <main class="container py-5">
-    <p>Have questions or want to learn more about our project?  
-    Reach out to our team for information on research sources, collaboration opportunities, or general inquiries.</p>
+    <p id="paragraph1">
+      Have questions or want to learn more about our project?  
+      Reach out to our team for information on research sources, collaboration opportunities, or general inquiries.
+    </p>
+
     <form class="mt-4">
+
     <div class="form-group">
-      <label for="name">Name</label>
+      <label for="name" id="labelName">Name</label>
       <input type="text" class="form-control" id="name" placeholder="Your name">
     </div>
 
     <div class="form-group">
-      <label for="email">Email</label>
+      <label for="email" id="labelEmail">Email</label>
       <input type="email" class="form-control" id="email" placeholder="you@example.com">
     </div>
 
     <div class="form-group">
-      <label for="message">Message</label>
+      <label for="message" id="labelMessage">Message</label>
       <textarea class="form-control" id="message" rows="5" placeholder="Your message..."></textarea>
     </div>
 
-    <button type="submit" class="btn btn-primary">Send Message</button>
+    <button type="submit" class="btn btn-primary" id="sendButton">Send Message</button>
   </form>
   </main>
 
   <!-- FOOTER -->
-  <footer class="container py-4 text-muted small">
+  <footer class="container py-4 text-muted small" id="footerText">
     <hr>
     © 2025 Breaking The Chains · Educational Project
   </footer>
+
+<!-- SCRIPT FOR LANGUAGE TOGGLE -->
+<script>
+const translations = {
+  en: {
+    button: "Ver em Português",
+    header: "Contact Us",
+    paragraph1: "Have questions or want to learn more about our project? Reach out to our team for information on research sources, collaboration opportunities, or general inquiries.",
+    labelName: "Name",
+    labelEmail: "Email",
+    labelMessage: "Message",
+    sendButton: "Send Message",
+    footer: "© 2025 Breaking The Chains · Educational Project",
+
+    placeholderName: "Your name",
+    placeholderEmail: "you@example.com",
+    placeholderMessage: "Your message..."
+  },
+
+  pt: {
+    button: "View in English",
+    header: "Contato",
+    paragraph1: "Tem perguntas ou deseja saber mais sobre nosso projeto? Entre em contato com nossa equipe para informações sobre fontes de pesquisa, oportunidades de colaboração ou dúvidas gerais.",
+    labelName: "Nome",
+    labelEmail: "Email",
+    labelMessage: "Mensagem",
+    sendButton: "Enviar Mensagem",
+    footer: "© 2025 Breaking The Chains · Projeto Educacional",
+
+    placeholderName: "Seu nome",
+    placeholderEmail: "voce@exemplo.com",
+    placeholderMessage: "Sua mensagem..."
+  }
+};
+
+let currentLang = 'en';
+const btn = document.getElementById('langToggle');
+
+btn.addEventListener('click', () => {
+  currentLang = currentLang === 'en' ? 'pt' : 'en';
+  const t = translations[currentLang];
+
+  btn.textContent = t.button;
+  document.getElementById('headerText').textContent = t.header;
+  document.getElementById('paragraph1').textContent = t.paragraph1;
+
+  document.getElementById('labelName').textContent = t.labelName;
+  document.getElementById('labelEmail').textContent = t.labelEmail;
+  document.getElementById('labelMessage').textContent = t.labelMessage;
+
+  document.getElementById('sendButton').textContent = t.sendButton;
+
+  // NEW: Placeholder translations
+  document.getElementById("name").placeholder = t.placeholderName;
+  document.getElementById("email").placeholder = t.placeholderEmail;
+  document.getElementById("message").placeholder = t.placeholderMessage;
+
+  document.getElementById('footerText').innerHTML = `<hr>${t.footer}`;
+});
+</script>
+
+
 </body>
 </html>
