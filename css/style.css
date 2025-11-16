@@ -136,3 +136,13 @@ section img {
   margin: 0 auto;
   display: block;
 }
+
+/* Raise navbar above language toggle */
+.navbar {
+  z-index: 4000 !important;
+}
+
+/* Raise dropdown menu above everything */
+.navbar .dropdown-menu {
+  z-index: 5000 !important;
+}
