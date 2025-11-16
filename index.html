@@ -7,7 +7,7 @@
 
   <!-- Bootstrap & Fonts -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif&display=swap" rel="stylesheet">0
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Scripts -->
@@ -47,22 +47,63 @@
     </div>
   </nav>
 
+<!-- LANGUAGE TOGGLE -->
+<div class="language-toggle text-left pl-4 pt-2">
+  <button id="langToggle" class="lang-btn">Ver em Português</button>
+</div>
+
   <!-- BANNER -->
   <div class="banner-container">
     <img class="banner-image" src="images/banner-image.png" alt="Breaking The Chains banner">
-    <div class="banner-text">Breaking The Chains: Human Trafficking in Brazil</div>
+    <div class="banner-text" id="bannerText">Breaking The Chains: Human Trafficking in Brazil</div>
   </div>
 
   <!-- MAIN CONTENT -->
   <main class="container py-5">
-    <p>Welcome to our site dedicated to raising awareness about human trafficking in Brazil. 
-       Explore stories, data, and ways you can help make a difference.</p>
+    <p id="welcomeParagraph">
+      Welcome to our site dedicated to raising awareness about human trafficking in Brazil. 
+      Explore stories, data, and ways you can help make a difference.
+    </p>
   </main>
 
   <!-- FOOTER -->
-  <footer class="container py-4 text-muted small">
+  <footer class="container py-4 text-muted small" id="footerText">
     <hr>
     © 2025 Breaking The Chains · Educational Project
   </footer>
+
+<!-- SCRIPT FOR LANGUAGE TOGGLE -->
+<script>
+const translations = {
+  en: {
+    button: "Ver em Português",
+    bannerText: "Breaking The Chains: Human Trafficking in Brazil",
+    welcomeParagraph: "Welcome to our site dedicated to raising awareness about human trafficking in Brazil. Explore stories, data, and ways you can help make a difference.",
+    footer: "© 2025 Breaking The Chains · Educational Project"
+  },
+
+  pt: {
+    button: "View in English",
+    bannerText: "Quebrando as Correntes: Tráfico de Pessoas no Brasil",
+    welcomeParagraph: "Bem-vindo ao nosso site dedicado a aumentar a conscientização sobre o tráfico de pessoas no Brasil. Explore histórias, dados e maneiras de ajudar a fazer a diferença.",
+    footer: "© 2025 Breaking The Chains · Projeto Educacional"
+  }
+};
+
+let currentLang = 'en';
+const btn = document.getElementById('langToggle');
+
+btn.addEventListener('click', () => {
+  currentLang = currentLang === 'en' ? 'pt' : 'en';
+  const t = translations[currentLang];
+
+  btn.textContent = t.button;
+  document.getElementById('bannerText').textContent = t.bannerText;
+  document.getElementById('welcomeParagraph').textContent = t.welcomeParagraph;
+
+  document.getElementById('footerText').innerHTML = `<hr>${t.footer}`;
+});
+</script>
+
 </body>
 </html>
