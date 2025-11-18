@@ -146,3 +146,8 @@ section img {
 .navbar .dropdown-menu {
   z-index: 5000 !important;
 }
+
+#dataImage {
+  max-width: 40%;   
+  height: auto;
+}
