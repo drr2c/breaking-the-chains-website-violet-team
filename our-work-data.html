@@ -108,6 +108,11 @@ btn.addEventListener("click", () => {
   document.getElementById("dataHeader").textContent = t.header;
   document.getElementById("dataImage").alt = t.imgAlt;
   document.getElementById("footerText").innerHTML = `<hr>${t.footer}`;
+
+   document.getElementById("dataImage").src = 
+    currentLang === "en"
+      ? "images/human-trafficking-warning-signs.png"
+      : "images/human-trafficking-warning-signs-pt.png";
 });
 </script>
 
