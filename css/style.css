@@ -95,7 +95,7 @@ h1, h2, h3, .page-header h1 {
 /* Language Toggle Styling */
 .language-toggle {
   position: fixed;
-  top: 70px; /* sits right below the navbar */
+  top: 95px; /* sits right below the navbar */
   left: 20px; /* aligned to the left side */
   z-index: 1050; /* ensures visibility above content */
 }
