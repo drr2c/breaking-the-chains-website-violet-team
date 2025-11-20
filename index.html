@@ -19,7 +19,7 @@
 <body>
   <!-- NAVBAR -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="css/index.html">
       <img src="images/Breaking_the_chains_logo.png"
         alt="Breaking The Chains Logo"
         style="height: 60px; width: auto;"
@@ -34,20 +34,20 @@
 
     <div class="collapse navbar-collapse" id="myNavMenu">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="css/about.html">About</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="ourWorkDropdown"
              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
              Our Work
           </a>
           <div class="dropdown-menu" aria-labelledby="ourWorkDropdown">
-            <a class="dropdown-item" href="our-work-stories.html">Stories</a>
-            <a class="dropdown-item" href="our-work-data.html">Data</a>
+            <a class="dropdown-item" href="css/our-work-stories.html">Stories</a>
+            <a class="dropdown-item" href="css/our-work-data.html">Data</a>
           </div>
         </li>
 
-        <li class="nav-item"><a class="nav-link" href="get-involved.html">Get Involved</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="css/get-involved.html">Get Involved</a></li>
+        <li class="nav-item"><a class="nav-link" href="css/contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -64,12 +64,176 @@
   </div>
 
   <!-- MAIN CONTENT -->
-  <main class="container py-5">
-    <p id="welcomeParagraph">
-      Welcome to our site dedicated to raising awareness about human trafficking in Brazil. 
-      Explore stories, data, and ways you can help make a difference.
+  <main class="container py-5 section-intro">
+  <div class="intro-wrapper">
+    <div class="row align-items-center">
+      <!-- LEFT: IMAGE -->
+      <div class="col-md-5 mb-4 mb-md-0 text-center">
+        <img 
+          src="images/home-intro.png" 
+          alt="Two hands breaking a chain, symbolizing freedom from human trafficking"
+          class="img-fluid rounded shadow-sm intro-image fade-in-left"
+        >
+      </div>
+
+      <!-- RIGHT: WELCOME CONTENT -->
+      <div class="col-md-7 fade-in-right">
+        <h2 class="intro-heading" id="welcomeHeading">Welcome to Breaking The Chains</h2>
+        <p id="welcomeParagraph" class="intro-text">
+          Welcome to Breaking The Chains, an educational site dedicated to raising awareness about human trafficking in Brazil. Here you will find clear information about how trafficking happens, key statistics, and how Brazilian laws and organizations are working to protect vulnerable communities. Our Stories and Data pages bring the issue to life through authentic experiences and visual trends. At the same time, the Get Involved section shows you how to recognize the signs, share reliable information, and connect with five trusted anti-trafficking organizations. As this is a student project, we do not collect donations directly. However, you can choose to support these organizations through their official websites.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+	<!-- ORGANIZATIONS SECTION -->
+<section class="container py-5 org-section">
+ <div class="text-center mb-4">
+  <h2 class="org-heading" id="orgHeading">Support Trusted Organizations</h2>
+  <p class="org-intro" id="orgIntro">
+    Because this is a student project, we do not accept donations directly. 
+    Instead, we encourage you to learn more and, if you are able, support 
+    trusted organizations that combat human trafficking and support survivors.
+  </p>
+</div>
+
+  <div class="row">
+    <!-- The Exodus Road -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="card h-100 org-card">
+    <div class="card-body d-flex flex-column">
+      <h3 class="card-title" id="org1Title">The Exodus Road</h3>
+      <p class="card-text" id="org1Text">
+        An international nonprofit that partners with local communities and 
+        authorities to identify trafficking, support rescues, and provide 
+        survivor care.
+      </p>
+      <a href="https://theexodusroad.com/" 
+         class="btn btn-sm btn-primary mt-auto"
+         target="_blank" rel="noopener noreferrer"
+         id="org1Button">
+        Visit Website
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Project Rescue -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="card h-100 org-card">
+    <div class="card-body d-flex flex-column">
+      <h3 class="card-title" id="org2Title">Project Rescue</h3>
+      <p class="card-text" id="org2Text">
+        A global network focused on prevention, safe homes, and long-term 
+        healing for individuals and families affected by sexual exploitation 
+        and trafficking.
+      </p>
+      <a href="https://www.projectrescue.com/" 
+         class="btn btn-sm btn-primary mt-auto"
+         target="_blank" rel="noopener noreferrer"
+         id="org2Button">
+        Visit Website
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Human Trafficking Institute -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="card h-100 org-card">
+    <div class="card-body d-flex flex-column">
+      <h3 class="card-title" id="org3Title">Human Trafficking Institute</h3>
+      <p class="card-text" id="org3Text">
+        An organization that works with governments and justice systems 
+        to improve investigations, prosecutions, and data on human trafficking.
+      </p>
+      <a href="https://traffickinginstitute.org/" 
+         class="btn btn-sm btn-primary mt-auto"
+         target="_blank" rel="noopener noreferrer"
+         id="org3Button">
+        Visit Website
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- ASBRAD -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="card h-100 org-card">
+    <div class="card-body d-flex flex-column">
+      <h3 class="card-title" id="org4Title">ASBRAD</h3>
+      <p class="card-text" id="org4Text">
+        A Brazil-based organization that offers support, advocacy, and 
+        research to protect people affected by human trafficking and 
+        related violence.
+      </p>
+      <a href="https://asbrad.org.br/trafico-de-pessoas/" 
+         class="btn btn-sm btn-primary mt-auto"
+         target="_blank" rel="noopener noreferrer"
+         id="org4Button">
+        Visit Website
+      </a>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Global Alliance Against Traffic in Women -->
+<div class="col-md-6 col-lg-4 mb-4">
+  <div class="card h-100 org-card">
+    <div class="card-body d-flex flex-column">
+      <h3 class="card-title" id="org5Title">
+        Global Alliance Against Traffic in Women
+      </h3>
+      <p class="card-text" id="org5Text">
+        An international alliance of organizations promoting the rights 
+        of migrant and trafficked women through research, advocacy, and 
+        survivor-centered support.
+      </p>
+      <a href="https://gaatw.org/who-we-are/about-us" 
+         class="btn btn-sm btn-primary mt-auto"
+         target="_blank" rel="noopener noreferrer"
+         id="org5Button">
+        Visit Website
+      </a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+	<!-- ACTION BANNER -->
+<section class="action-banner text-center">
+  <div class="banner-overlay">
+    <h2 id="actionHeading">Together, We Can Help End Human Trafficking</h2>
+    <p id="actionText">
+      Every action matters—learning the signs, raising awareness, and supporting 
+      trusted organizations can protect lives and create real change. Choose a 
+      next step below to explore more.
     </p>
-  </main>
+
+    <div class="action-links">
+      <a href="css/about.html" class="action-pill" id="actionLink1">
+        ✔ Understand the issue
+      </a>
+      <a href="css/our-work-data.html" class="action-pill" id="actionLink2">
+        ✔ Learn the signs
+      </a>
+      <a href="css/our-work-stories.html" class="action-pill" id="actionLink3">
+        ✔ Share awareness
+      </a>
+      <a href="css/get-involved.html" class="action-pill" id="actionLink4">
+        ✔ Support organizations
+      </a>
+    </div>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer class="container py-4 text-muted small" id="footerText">
@@ -83,14 +247,64 @@ const translations = {
   en: {
     button: "Ver em Português",
     bannerText: "Breaking The Chains: Human Trafficking in Brazil",
-    welcomeParagraph: "Welcome to our site dedicated to raising awareness about human trafficking in Brazil. Explore stories, data, and ways you can help make a difference.",
+	welcomeHeading: "Welcome to Breaking The Chains",
+	welcomeParagraph: "Welcome to Breaking The Chains, an educational site dedicated to raising awareness about human trafficking in Brazil. Here you will find clear information about how trafficking happens, key statistics, and how Brazilian laws and organizations are working to protect vulnerable communities. Our Stories and Data pages bring the issue to life through authentic experiences and visual trends. At the same time, the Get Involved section shows you how to recognize the signs, share reliable information, and connect with five trusted anti-trafficking organizations. As this is a student project, we do not collect donations directly. However, you can choose to support these organizations through their official websites.",
+	orgHeading: "Support Trusted Organizations",
+	orgIntro: "Because this is a student project, we do not accept donations directly. Instead, we encourage you to learn more and, if you are able, support trusted organizations that combat human trafficking and support survivors.",
+    org1Title: "The Exodus Road",
+    org1Text: "An international nonprofit that partners with local communities and authorities to identify trafficking, support rescues, and provide survivor care.",
+    org1Button: "Visit Website",
+    org2Title: "Project Rescue",
+    org2Text: "A global network focused on prevention, safe homes, and long-term healing for individuals and families affected by sexual exploitation and trafficking.",
+    org2Button: "Visit Website",
+    org3Title: "Human Trafficking Institute",
+    org3Text: "An organization that works with governments and justice systems to improve investigations, prosecutions, and data on human trafficking.",
+    org3Button: "Visit Website",
+    org4Title: "ASBRAD",
+    org4Text: "A Brazil-based organization that offers support, advocacy, and research to protect people affected by human trafficking and related violence.",
+    org4Button: "Visit Website",
+    org5Title: "Global Alliance Against Traffic in Women",
+    org5Text: "An international alliance of organizations promoting the rights of migrant and trafficked women through research, advocacy, and survivor-centered support.",
+    org5Button: "Visit Website",
+    actionHeading: "Together, We Can Help End Human Trafficking",
+    actionText: "Every action matters—learning the signs, raising awareness, and supporting trusted organizations can protect lives and create real change. Choose a next step below to explore more.",
+    actionLink1: "✔ Understand the issue",
+    actionLink2: "✔ Learn the signs",
+    actionLink3: "✔ Share awareness",
+    actionLink4: "✔ Support organizations",
+
     footer: "© 2025 Breaking The Chains · Educational Project"
   },
 
   pt: {
     button: "View in English",
     bannerText: "Quebrando as Correntes: Tráfico de Pessoas no Brasil",
-    welcomeParagraph: "Bem-vindo ao nosso site dedicado a aumentar a conscientização sobre o tráfico de pessoas no Brasil. Explore histórias, dados e maneiras de ajudar a fazer a diferença.",
+    welcomeHeading: "Bem-vindo ao Breaking The Chains",
+	welcomeParagraph: "Bem-vindo ao Breaking The Chains, um site educacional dedicado a aumentar a conscientização sobre o tráfico de pessoas no Brasil. Aqui você encontrará informações claras sobre como o tráfico acontece, estatísticas importantes e como as leis e organizações brasileiras trabalham para proteger comunidades vulneráveis. Nossas páginas de Histórias e Dados trazem o tema à vida por meio de experiências autênticas e tendências visuais. Ao mesmo tempo, a seção Como Ajudar mostra como reconhecer os sinais, compartilhar informações confiáveis e se conectar com cinco organizações confiáveis de combate ao tráfico de pessoas. Como este é um projeto acadêmico, não coletamos doações diretamente. No entanto, você pode escolher apoiar essas organizações por meio de seus sites oficiais.",
+    orgHeading: "Apoie Organizações Confiáveis",
+    orgIntro: "Como este é um projeto acadêmico, não aceitamos doações diretamente. Em vez disso, incentivamos você a aprender mais e, se possível, apoiar organizações confiáveis que combatem o tráfico de pessoas e oferecem suporte às vítimas.",
+    org1Title: "The Exodus Road",
+    org1Text: "Uma organização internacional sem fins lucrativos que trabalha com comunidades locais e autoridades para identificar casos de tráfico, apoiar operações de resgate e fornecer cuidado às vítimas.",
+    org1Button: "Visitar Site",
+    org2Title: "Project Rescue",
+    org2Text: "Uma rede global focada em prevenção, casas seguras e cura de longo prazo para indivíduos e famílias afetados pela exploração sexual e pelo tráfico de pessoas.",
+    org2Button: "Visitar Site",
+    org3Title: "Human Trafficking Institute",
+    org3Text: "Uma organização que trabalha com governos e sistemas de justiça para melhorar investigações, processos judiciais e dados relacionados ao tráfico de pessoas.",
+    org3Button: "Visitar Site",
+    org4Title: "ASBRAD",
+    org4Text: "Uma organização brasileira que oferece apoio, advocacy e pesquisa para proteger pessoas afetadas pelo tráfico de pessoas e pela violência relacionada.",
+    org4Button: "Visitar Site",
+    org5Title: "Global Alliance Against Traffic in Women",
+    org5Text: "Uma aliança internacional de organizações que promovem os direitos de mulheres migrantes e vítimas de tráfico por meio de pesquisa, advocacy e suporte centrado nas sobreviventes.",
+    org5Button: "Visitar Site",
+    actionHeading: "Juntos, Podemos Ajudar a Acabar com o Tráfico de Pessoas",
+    actionText: "Cada ação importa — aprender os sinais, compartilhar informações e apoiar organizações confiáveis pode proteger vidas e gerar mudanças reais. Escolha um próximo passo abaixo para saber mais.",
+    actionLink1: "✔ Entenda o problema",
+    actionLink2: "✔ Aprenda os sinais",
+    actionLink3: "✔ Compartilhe informação",
+    actionLink4: "✔ Apoie organizações",
+
     footer: "© 2025 Breaking The Chains · Projeto Educacional"
   }
 };
@@ -105,6 +319,30 @@ btn.addEventListener('click', () => {
   btn.textContent = t.button;
   document.getElementById('bannerText').textContent = t.bannerText;
   document.getElementById('welcomeParagraph').textContent = t.welcomeParagraph;
+  document.getElementById('welcomeHeading').textContent = t.welcomeHeading;
+  document.getElementById('orgHeading').textContent = t.orgHeading;
+  document.getElementById('orgIntro').textContent = t.orgIntro;
+  document.getElementById('org1Title').textContent = t.org1Title;
+  document.getElementById('org1Text').textContent = t.org1Text;
+  document.getElementById('org1Button').textContent = t.org1Button;
+  document.getElementById('org2Title').textContent = t.org2Title;
+  document.getElementById('org2Text').textContent = t.org2Text;
+  document.getElementById('org2Button').textContent = t.org2Button;
+  document.getElementById('org3Title').textContent = t.org3Title;
+  document.getElementById('org3Text').textContent = t.org3Text;
+  document.getElementById('org3Button').textContent = t.org3Button;
+  document.getElementById('org4Title').textContent = t.org4Title;
+  document.getElementById('org4Text').textContent = t.org4Text;
+  document.getElementById('org4Button').textContent = t.org4Button;
+  document.getElementById('org5Title').textContent = t.org5Title;
+  document.getElementById('org5Text').textContent = t.org5Text;
+  document.getElementById('org5Button').textContent = t.org5Button;
+  document.getElementById('actionHeading').textContent = t.actionHeading;
+  document.getElementById('actionText').textContent = t.actionText;
+  document.getElementById('actionLink1').textContent = t.actionLink1;
+  document.getElementById('actionLink2').textContent = t.actionLink2;
+  document.getElementById('actionLink3').textContent = t.actionLink3;
+  document.getElementById('actionLink4').textContent = t.actionLink4;
 
   document.getElementById('footerText').innerHTML = `<hr>${t.footer}`;
 });

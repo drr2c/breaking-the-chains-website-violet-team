@@ -66,7 +66,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Anton', sans-serif;
-    font-size: 3rem;
+  	font-size: clamp(1.2rem, 4vw, 3rem);
     color: #0A3D62;
     text-align: center;
     text-shadow: 2px 2px 8px rgb(255, 255, 255, 0.9);
@@ -88,7 +88,7 @@ body {
   background-color: #F5F5F5;
 }
 
-h1, h2, h3, .page-header h1, .banner-text {
+h1, h2, h3, .page-header h1 {
   font-family: 'Anton', sans-serif;
 }
 
@@ -151,3 +151,260 @@ section img {
   max-width: 40%;   
   height: auto;
 }
+
+/* === Home Intro Section === */
+
+.section-intro {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.intro-wrapper {
+  background-color: #f8f9fa;        
+  border-radius: 0.75rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+.intro-heading {
+  font-family: "Anton", sans-serif;
+  font-size: 1.9rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.03em;
+}
+
+.intro-text {
+  font-family: "PT Serif", serif;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.intro-image {
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fade-in-left,
+.fade-in-right {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.9s ease-out forwards;
+}
+
+.fade-in-left {
+  animation-delay: 0.1s;
+}
+
+.fade-in-right {
+  animation-delay: 0.25s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 767.98px) {
+  .intro-wrapper {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .intro-image {
+    max-width: 65%;
+    margin-bottom: 1rem;
+  }
+
+  .intro-heading {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+}
+
+/* === Organizations Section (Home) === */
+
+.org-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.org-heading {
+  font-family: "Anton", sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+
+.org-intro {
+  font-family: "PT Serif", serif;
+  font-size: 1rem;
+  max-width: 720px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.7;
+  color: #555;
+}
+
+.org-card {
+  border: none;
+  border-radius: 0.85rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.org-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+.org-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.org-card .card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.org-card .btn {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.85rem;
+}
+
+/* Optional: make heading and intro a bit tighter on mobile */
+@media (max-width: 767.98px) {
+  .org-heading {
+    font-size: 1.6rem;
+  }
+
+  .org-intro {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.action-links {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.action-pill {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  backdrop-filter: blur(3px);
+}
+
+.action-pill:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .action-pill {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem;
+  }
+}
+
+.action-banner {
+  background-image: url("../images/action-image.png"); /* this loads your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 1rem;
+  margin-top: 3rem;
+  border-radius: 0.75rem;
+  position: relative;
+  color: #F5F5F5;
+  overflow: hidden;
+}
+
+/* overlay so text is readable on top of the image */
+.banner-overlay {
+  background: linear-gradient(
+    rgba(10, 61, 98, 0.55),
+    rgba(27, 154, 170, 0.55)
+  );
+  padding: 2rem 1.75rem;
+  border-radius: 0.5rem;
+}
+
+
+.action-banner h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(10, 61, 98, 0.8);
+}
+
+.action-banner p {
+  font-family: "PT Serif", serif;
+  font-size: 1.1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(10, 61, 98, 0.7);
+}
+
+/* link buttons */
+.action-links {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.action-pill {
+  display: inline-block;
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  background: #0A3D62; /* deep blue fill */
+  border: 1px solid #0A3D62;
+  color: #F5F5F5; /* soft white */
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-pill:hover {
+  background: #064062; /* slightly darker for hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  color: #F5F5F5;
+}
+
+/* mobile responsive */
+@media (max-width: 768px) {
+  .action-banner {
+    padding: 3rem 1rem;
+  }
+  .action-banner
+
