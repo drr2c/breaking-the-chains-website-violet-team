@@ -433,11 +433,11 @@ section img {
   border: none;
 }
 
-/* Scroll Reveal Animation */
+/* Card Scroll Reveal Animation for Stories Page */
 .fade-in-on-scroll {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 2s ease, transform 2s ease;
 }
 
 .fade-in-on-scroll.show {
