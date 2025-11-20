@@ -78,7 +78,7 @@
     <div class="col-md-6 mb-4">
       <div class="story-card fade-in-on-scroll">
         <h3 id="storiesCard1Header">Brazilian Law Enforcement Frees Human Trafficking Survivors</h3>
-        <p>content</p>
+        <p id="storiesCard1content">content</p>
 
         <div class="video-container">
           <iframe 
@@ -98,56 +98,56 @@
     <!-- Card 2 -->
     <div class="col-md-6 mb-4">
       <div class="story-card fade-in-on-scroll">
-        <h3>Story 2</h3>
-        <p>content</p>
+        <h3 id="storiesCard2Header">Story 2</h3>
+        <p id="storiesCard2content">content</p>
       </div>
     </div>
 
     <!-- Card 3 -->
     <div class="col-md-6 mb-4">
       <div class="story-card fade-in-on-scroll">
-        <h3>Story 3</h3>
-        <p>content</p>
+        <h3 id="storiesCard3Header">Story 3</h3>
+        <p id="storiesCard3content">content</p>
       </div>
     </div>
 
     <!-- Card 4 -->
     <div class="col-md-6 mb-4">
       <div class="story-card fade-in-on-scroll">
-        <h3>Story 4</h3>
-        <p>content</p>
+        <h3 id="storiesCard4Header">Story 4</h3>
+        <p id="storiesCard4content">content</p>
       </div>
     </div>
 
     <!-- Card 5 -->
     <div class="col-md-6 mb-4">
       <div class="story-card fade-in-on-scroll">
-        <h3>Story 5</h3>
-        <p>content</p>
+        <h3 id="storiesCard5Header">Story 5</h3>
+        <p id="storiesCard5content">content</p>
       </div>
     </div>
 
     <!-- Card 6 -->
     <div class="col-md-6 mb-4">
       <div class="story-card fade-in-on-scroll">
-        <h3>Story 6</h3>
-        <p>content</p>
+        <h3 id="storiesCard6Header">Story 6</h3>
+        <p id="storiesCard6content">content</p>
       </div>
     </div>
 
     <!-- Card 7 -->
     <div class="col-md-6 mb-4">
       <div class="story-card fade-in-on-scroll">
-        <h3>Story 7</h3>
-        <p>content</p>
+        <h3 id="storiesCard7Header">Story 7</h3>
+        <p id="storiesCard7content">content</p>
       </div>
     </div>
 
     <!-- Card 8 -->
     <div class="col-md-6 mb-4">
       <div class="story-card fade-in-on-scroll">
-        <h3>Story 8</h3>
-        <p>content</p>
+        <h3 id="storiesCard8Header">Story 8</h3>
+        <p id="storiesCard8content">content</p>
       </div>
     </div>
 
@@ -168,14 +168,16 @@ const translations = {
     button: "Ver em Português",
     header: "Stories of Hope and Awareness",
     paragraph: "Learn about real stories that highlight the fight against human trafficking in Brazil. Each story reveals how awareness, education, and community involvement can change lives.",
-    footer: "© 2025 Breaking The Chains · Educational Project"
+    footer: "© 2025 Breaking The Chains · Educational Project",
+    card1Header: "Brazilian Law Enforcement Frees Human Trafficking Survivors"
   },
 
   pt: {
     button: "View in English",
     header: "Histórias de Esperança e Conscientização",
     paragraph: "Conheça histórias reais que destacam a luta contra o tráfico de pessoas no Brasil. Cada relato mostra como a conscientização, a educação e o envolvimento comunitário podem transformar vidas.",
-    footer: "© 2025 Breaking The Chains · Projeto Educacional"
+    footer: "© 2025 Breaking The Chains · Projeto Educacional",
+    card1Header: "Autoridades Brasileiras Libertam Sobreviventes do Tráfico Humano"
   }
 };
 
@@ -190,6 +192,7 @@ btn.addEventListener("click", () => {
   document.getElementById("storiesHeader").textContent = t.header;
   document.getElementById("storiesParagraph").textContent = t.paragraph;
   document.getElementById("footerText").innerHTML = `<hr>${t.footer}`;
+  document.getElementById("storiesCard1Header").textContent = t.card1Header;
 });
 </script>
 
