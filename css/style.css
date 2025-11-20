@@ -297,41 +297,6 @@ section img {
   }
 }
 
-.action-links {
-  margin-top: 1.8rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-}
-
-.action-pill {
-  display: inline-block;
-  padding: 0.5rem 1.1rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #ffffff;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-  backdrop-filter: blur(3px);
-}
-
-.action-pill:hover {
-  background: rgba(255, 255, 255, 0.22);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
-}
-
-@media (max-width: 576px) {
-  .action-pill {
-    font-size: 0.9rem;
-    padding: 0.45rem 0.9rem;
-  }
-}
-
 .action-banner {
   background-image: url("../images/action-image.png"); /* this loads your image */
   background-size: cover;
@@ -406,5 +371,17 @@ section img {
   .action-banner {
     padding: 3rem 1rem;
   }
-  .action-banner
 
+  .action-banner h2 {
+    font-size: 1.6rem;
+  }
+
+  .action-banner p {
+    font-size: 0.95rem;
+  }
+
+  .action-pill {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem;
+  }
+}
