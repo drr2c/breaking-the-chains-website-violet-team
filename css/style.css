@@ -160,10 +160,11 @@ section img {
 }
 
 .intro-wrapper {
-  background-color: #f8f9fa;        
+  background-color: #F5F5F5;        
+  border: 1px solid #E0E0E0;
   border-radius: 0.75rem;
   padding: 2.5rem 2rem;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
 }
 
 .intro-heading {
