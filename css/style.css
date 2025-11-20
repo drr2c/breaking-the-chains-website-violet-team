@@ -179,11 +179,21 @@ section img {
   font-size: 1rem;
 }
 
-.intro-image {
+.intro-image-wrapper {
   max-width: 70%;
+  margin: 0 auto;
+  border: 6px solid #C8E0F4;
+  border-radius: 12px;
+  overflow: hidden; /* Clips rounded corners */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12), 0 0 10px rgba(200,224,244,0.5);
+}
+
+.intro-image {
+  width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  border: none !important;  /* REMOVE old border */
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 .fade-in-left,
@@ -218,7 +228,7 @@ section img {
     padding: 1.75rem 1.25rem;
   }
 
-  .intro-image {
+  .intro-image-wrapper {
     max-width: 65%;
     margin-bottom: 1rem;
   }
