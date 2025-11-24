@@ -131,7 +131,7 @@
                 support rescues, and provide survivor care.
               </p>
               <a href="https://theexodusroad.com/" 
-                 class="btn btn-sm btn-primary mt-auto"
+                 class="btn btn-sm btn-primary mt-auto org-visit-btn"
                  target="_blank" rel="noopener noreferrer">
                 Visit Website
               </a>
@@ -149,7 +149,7 @@
                 affected by sexual exploitation and trafficking.
               </p>
               <a href="https://www.projectrescue.com/" 
-                 class="btn btn-sm btn-primary mt-auto"
+                 class="btn btn-sm btn-primary mt-auto org-visit-btn"
                  target="_blank" rel="noopener noreferrer">
                 Visit Website
               </a>
@@ -167,7 +167,7 @@
                 prosecutions, and data on human trafficking.
               </p>
               <a href="https://traffickinginstitute.org/" 
-                 class="btn btn-sm btn-primary mt-auto"
+                 class="btn btn-sm btn-primary mt-auto org-visit-btn"
                  target="_blank" rel="noopener noreferrer">
                 Visit Website
               </a>
@@ -185,7 +185,7 @@
                 human trafficking and related violence.
               </p>
               <a href="https://asbrad.org.br/trafico-de-pessoas/" 
-                 class="btn btn-sm btn-primary mt-auto"
+                 class="btn btn-sm btn-primary mt-auto org-visit-btn"
                  target="_blank" rel="noopener noreferrer">
                 Visit Website
               </a>
@@ -205,7 +205,7 @@
                 research, advocacy, and survivor-centered support.
               </p>
               <a href="https://gaatw.org/who-we-are/about-us" 
-                 class="btn btn-sm btn-primary mt-auto"
+                 class="btn btn-sm btn-primary mt-auto org-visit-btn"
                  target="_blank" rel="noopener noreferrer">
                 Visit Website
               </a>
@@ -248,7 +248,7 @@
     instituteDesc: "An organization that works with governments and justice systems to improve investigations, prosecutions, and data on human trafficking.",
     asbradDesc: "A Brazil-based organization that offers support, advocacy, and research to protect people affected by human trafficking and related violence.",
     gaatwDesc: "An international alliance of organizations promoting the rights of migrant and trafficked women through research, advocacy, and survivor-centered support.",
-
+    visitWebsite: "Visit Website",
     footer: "© 2025 Breaking The Chains · Educational Project"
   },
 
@@ -268,6 +268,7 @@
     instituteDesc: "Uma organização que atua com governos e sistemas de justiça para melhorar investigações, processos judiciais e dados sobre tráfico de pessoas.",
     asbradDesc: "Uma organização brasileira que oferece apoio, advocacy e pesquisa para proteger pessoas afetadas pelo tráfico de pessoas e pela violência relacionada.",
     gaatwDesc: "Uma aliança internacional de organizações que promovem os direitos de mulheres migrantes e traficadas por meio de pesquisa, advocacy e apoio centrado na sobrevivente.",
+    visitWebsite: "Visitar o site",
     footer: "© 2025 Breaking The Chains · Projeto Educacional"
   }
 };
@@ -296,6 +297,10 @@ document.getElementById('langToggle').addEventListener('click', () => {
   document.getElementById('gaatwDesc').textContent = t.gaatwDesc;
   document.getElementById('footerText').innerHTML = `<hr>${t.footer}`;
   document.getElementById('langToggle').textContent = t.button;
+  document.querySelectorAll(".org-visit-btn").forEach(btn => {
+  btn.textContent = t.visitWebsite;
+});
+
 });
   </script>
 
