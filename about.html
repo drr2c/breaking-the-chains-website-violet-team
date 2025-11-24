@@ -52,40 +52,60 @@
     </div>
   </nav>
 
-<!-- LANGUAGE TOGGLE -->
-<div class="language-toggle text-left pl-4 pt-2">
-  <button id="langToggle" class="lang-btn">Ver em Português</button>
-</div>
+  <!-- LANGUAGE TOGGLE -->
+  <div class="language-toggle text-left pl-4 pt-2">
+    <button id="langToggle" class="lang-btn">Ver em Português</button>
+  </div>
 
-<!-- HEADER -->
- <header class="page-header text-center mt-5 pt-5">
-  <h1 id="headerText">About Human Trafficking in Brazil</h1>
-</header>
+  <!-- HEADER -->
+  <header class="page-header text-center mt-5 pt-5">
+    <h1 id="headerText">About Human Trafficking in Brazil</h1>
+  </header>
 
   <!-- MAIN CONTENT -->
   <main class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-md-8">
-        <p id="p1">According to borgenproject.org, over 53,000 Brazilians were rescued from forced labor between 1995 and 2017, and 35,000 people were rescued from slave labor between 2003 and 2017.</p>
-        
-        <p id="p2">The Global Slavery Index of 2023 stated approximately 1,053,000 of Brazil's population was living in modern slavery. This is more than half of their total population.</p>
+    <!-- Intro card: text + image, like the home page -->
+    <section class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <p id="p1">
+            According to borgenproject.org, over 53,000 Brazilians were rescued from forced labor between 1995 and 2017, and 35,000 people were rescued from slave labor between 2003 and 2017.
+          </p>
+          <p id="p2">
+            The Global Slavery Index of 2023 stated approximately 1,053,000 of Brazil's population was living in modern slavery. This is more than half of their total population.
+          </p>
+          <p id="p3">
+            The majority of men that are trafficked in Brazil are forced into slave labor, while the majority of women are sexually exploited, according to unodc.org.
+          </p>
+        </div>
 
-        <p id="p3">The majority of men that are trafficked in Brazil are forced into slave labor, while the majority of women are sexually exploited, according to unodc.org.</p>
-      </div>
         <div class="col-md-4 text-center">
-          <img src="images/BTC_1.png" alt="Close-up of a person's eye looking through wooden slats" class="img-fluid rounded shadow-sm">
+          <img
+            src="images/BTC_1.png"
+            alt="Close-up of a person's eye looking through wooden slats"
+            class="img-fluid rounded shadow-sm"
+          >
         </div>
       </div>
+    </section>
 
-        <p id="p4">Theexodusroad.com states the major trafficking types in Brazil are sexual exploitation and forced labor. The main tourist areas in Brazil are where a large amount of the children sexual exploitations occur. 77,290 cases of children exploitation were reported in 2016 alone. Spanish speaking people in Brazil are at a higher risk of being trafficked due to the language barrier with police mainly speaking Portuguese. This source also reports approximately 250,000 to 400,000 children were trafficked in 2009 and reported to the Brazilian Federal Police. The Brazilian areas impacted the most by trafficking are Goias, Minas Gerias, Pernambuco, Rio de Janeiro, and Sao Paulo.</p>
+    <section class="content-section bg-white rounded shadow-sm p-4">
+      <p id="p4">
+        Theexodusroad.com states the major trafficking types in Brazil are sexual exploitation and forced labor. The main tourist areas in Brazil are where a large amount of the children sexual exploitations occur. 77,290 cases of children exploitation were reported in 2016 alone. Spanish speaking people in Brazil are at a higher risk of being trafficked due to the language barrier with police mainly speaking Portuguese. This source also reports approximately 250,000 to 400,000 children were trafficked in 2009 and reported to the Brazilian Federal Police. The Brazilian areas impacted the most by trafficking are Goias, Minas Gerias, Pernambuco, Rio de Janeiro, and Sao Paulo.
+      </p>
 
-        <p id="p5">Law 13.344 was enacted in 2016 for a greater level of accountability for traffickers and assistance to victims. The law can only do so much, however, when evidence is not found or turned in.</p>
+      <p id="p5">
+        Law 13.344 was enacted in 2016 for a greater level of accountability for traffickers and assistance to victims. The law can only do so much, however, when evidence is not found or turned in.
+      </p>
 
-        <p id="p6"><strong>Organizations such as The Exodus Road, Project Rescue, Institute Elo, and ASBRAD are working to end human trafficking in Brazil, but more help is needed.</strong></p>
+      <p id="p6">
+        <strong>Organizations such as The Exodus Road, Project Rescue, Institute Elo, and ASBRAD are working to end human trafficking in Brazil, but more help is needed.</strong>
+      </p>
 
-        <p id="p7">Brazil remains on Tier 2 status, meaning its government has made efforts to end human trafficking but the problem is still prevalent.</p>
-      
-    
+      <p id="p7">
+        Brazil remains on Tier 2 status, meaning its government has made efforts to end human trafficking but the problem is still prevalent.
+      </p>
+    </section>
   </main>
 
   <!-- FOOTER -->
@@ -94,58 +114,58 @@
     © 2025 Breaking The Chains · Educational Project
   </footer>
 
-<!-- SCRIPT FOR LANGUAGE TOGGLE -->
-<script>
-  const translations = {
-    en: {
-      button: "Ver em Português",
-      header: "About Human Trafficking in Brazil",
+  <!-- SCRIPT FOR LANGUAGE TOGGLE -->
+  <script>
+    const translations = {
+      en: {
+        button: "Ver em Português",
+        header: "About Human Trafficking in Brazil",
 
-      p1: "According to borgenproject.org, over 53,000 Brazilians were rescued from forced labor between 1995 and 2017, and 35,000 people were rescued from slave labor between 2003 and 2017.",
-      p2: "The Global Slavery Index of 2023 stated approximately 1,053,000 of Brazil's population was living in modern slavery. This is more than half of their total population.",
-      p3: "The majority of men that are trafficked in Brazil are forced into slave labor, while the majority of women are sexually exploited, according to unodc.org.",
-      p4: "Theexodusroad.com states the major trafficking types in Brazil are sexual exploitation and forced labor. The main tourist areas in Brazil are where a large amount of the children sexual exploitations occur. 77,290 cases of children exploitation were reported in 2016 alone. Spanish speaking people in Brazil are at a higher risk of being trafficked due to the language barrier with police mainly speaking Portuguese. This source also reports approximately 250,000 to 400,000 children were trafficked in 2009 and reported to the Brazilian Federal Police. The Brazilian areas impacted the most by trafficking are Goias, Minas Gerias, Pernambuco, Rio de Janeiro, and Sao Paulo.",
-      p5: "Law 13.344 was enacted in 2016 for a greater level of accountability for traffickers and assistance to victims. The law can only do so much, however, when evidence is not found or turned in.",
-      p6: "Organizations such as The Exodus Road, Project Rescue, Institute Elo, and ASBRAD are working to end human trafficking in Brazil, but more help is needed.",
-      p7: "Brazil remains on Tier 2 status, meaning its government has made efforts to end human trafficking but the problem is still prevalent.",
+        p1: "According to borgenproject.org, over 53,000 Brazilians were rescued from forced labor between 1995 and 2017, and 35,000 people were rescued from slave labor between 2003 and 2017.",
+        p2: "The Global Slavery Index of 2023 stated approximately 1,053,000 of Brazil's population was living in modern slavery. This is more than half of their total population.",
+        p3: "The majority of men that are trafficked in Brazil are forced into slave labor, while the majority of women are sexually exploited, according to unodc.org.",
+        p4: "Theexodusroad.com states the major trafficking types in Brazil are sexual exploitation and forced labor. The main tourist areas in Brazil are where a large amount of the children sexual exploitations occur. 77,290 cases of children exploitation were reported in 2016 alone. Spanish speaking people in Brazil are at a higher risk of being trafficked due to the language barrier with police mainly speaking Portuguese. This source also reports approximately 250,000 to 400,000 children were trafficked in 2009 and reported to the Brazilian Federal Police. The Brazilian areas impacted the most by trafficking are Goias, Minas Gerias, Pernambuco, Rio de Janeiro, and Sao Paulo.",
+        p5: "Law 13.344 was enacted in 2016 for a greater level of accountability for traffickers and assistance to victims. The law can only do so much, however, when evidence is not found or turned in.",
+        p6: "Organizations such as The Exodus Road, Project Rescue, Institute Elo, and ASBRAD are working to end human trafficking in Brazil, but more help is needed.",
+        p7: "Brazil remains on Tier 2 status, meaning its government has made efforts to end human trafficking but the problem is still prevalent.",
 
-      footer: "© 2025 Breaking The Chains · Educational Project"
-    },
+        footer: "© 2025 Breaking The Chains · Educational Project"
+      },
 
-    pt: {
-      button: "View in English",
-      header: "Sobre o Tráfico de Pessoas no Brasil",
+      pt: {
+        button: "View in English",
+        header: "Sobre o Tráfico de Pessoas no Brasil",
 
-      p1: "De acordo com o borgenproject.org, mais de 53.000 brasileiros foram resgatados do trabalho forçado entre 1995 e 2017, e 35.000 pessoas foram resgatadas do trabalho escravo entre 2003 e 2017.",
-      p2: "O Índice Global de Escravidão de 2023 afirmou que aproximadamente 1.053.000 pessoas da população brasileira viviam em escravidão moderna. Isso representa mais da metade de toda a população do país.",
-      p3: "A maioria dos homens traficados no Brasil é forçada ao trabalho escravo, enquanto a maioria das mulheres é explorada sexualmente, segundo o unodc.org.",
-      p4: "O site theexodusroad.com afirma que os principais tipos de tráfico no Brasil são exploração sexual e trabalho forçado. As principais áreas turísticas do país são onde ocorre grande parte da exploração sexual infantil. Somente em 2016, foram registrados 77.290 casos de exploração infantil. Pessoas hispanofalantes no Brasil correm maior risco de serem traficadas devido à barreira linguística, já que a polícia fala principalmente português. Essa fonte também relata que aproximadamente 250.000 a 400.000 crianças foram traficadas em 2009 e registradas pela Polícia Federal do Brasil. As áreas mais afetadas pelo tráfico são Goiás, Minas Gerais, Pernambuco, Rio de Janeiro e São Paulo.",
-      p5: "A Lei 13.344 foi promulgada em 2016 para aumentar a responsabilização de traficantes e a assistência às vítimas. No entanto, a lei só pode fazer até certo ponto quando evidências não são encontradas ou entregues.",
-      p6: "Organizações como The Exodus Road, Project Rescue, Instituto Elo e ASBRAD trabalham para acabar com o tráfico de pessoas no Brasil, mas mais ajuda é necessária.",
-      p7: "O Brasil permanece no nível Tier 2, o que significa que o governo fez esforços para combater o tráfico de pessoas, mas o problema ainda é prevalente.",
+        p1: "De acordo com o borgenproject.org, mais de 53.000 brasileiros foram resgatados do trabalho forçado entre 1995 e 2017, e 35.000 pessoas foram resgatadas do trabalho escravo entre 2003 e 2017.",
+        p2: "O Índice Global de Escravidão de 2023 afirmou que aproximadamente 1.053.000 pessoas da população brasileira viviam em escravidão moderna. Isso representa mais da metade de toda a população do país.",
+        p3: "A maioria dos homens traficados no Brasil é forçada ao trabalho escravo, enquanto a maioria das mulheres é explorada sexualmente, segundo o unodc.org.",
+        p4: "O site theexodusroad.com afirma que os principais tipos de tráfico no Brasil são exploração sexual e trabalho forçado. As principais áreas turísticas do país são onde ocorre grande parte da exploração sexual infantil. Somente em 2016, foram registrados 77.290 casos de exploração infantil. Pessoas hispanofalantes no Brasil correm maior risco de serem traficadas devido à barreira linguística, já que a polícia fala principalmente português. Essa fonte também relata que aproximadamente 250.000 a 400.000 crianças foram traficadas em 2009 e registradas pela Polícia Federal do Brasil. As áreas mais afetadas pelo tráfico são Goiás, Minas Gerais, Pernambuco, Rio de Janeiro e São Paulo.",
+        p5: "A Lei 13.344 foi promulgada em 2016 para aumentar a responsabilização de traficantes e a assistência às vítimas. No entanto, a lei só pode fazer até certo ponto quando evidências não são encontradas ou entregues.",
+        p6: "Organizações como The Exodus Road, Project Rescue, Instituto Elo e ASBRAD trabalham para acabar com o tráfico de pessoas no Brasil, mas mais ajuda é necessária.",
+        p7: "O Brasil permanece no nível Tier 2, o que significa que o governo fez esforços para combater o tráfico de pessoas, mas o problema ainda é prevalente.",
 
-      footer: "© 2025 Breaking The Chains · Projeto Educacional"
-    }
-  };
+        footer: "© 2025 Breaking The Chains · Projeto Educacional"
+      }
+    };
 
-  let currentLang = 'en';
-  const btn = document.getElementById('langToggle');
+    let currentLang = 'en';
+    const btn = document.getElementById('langToggle');
 
-  btn.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'pt' : 'en';
-    const t = translations[currentLang];
+    btn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'pt' : 'en';
+      const t = translations[currentLang];
 
-    btn.textContent = t.button;
-    document.getElementById('headerText').textContent = t.header;
+      btn.textContent = t.button;
+      document.getElementById('headerText').textContent = t.header;
 
-    // paragraphs
-    for (let i = 1; i <= 7; i++) {
-      document.getElementById(`p${i}`).textContent = t[`p${i}`];
-    }
+      // paragraphs
+      for (let i = 1; i <= 7; i++) {
+        document.getElementById(`p${i}`).textContent = t[`p${i}`];
+      }
 
-    document.getElementById('footerText').innerHTML = `<hr>${t.footer}`;
-  });
-</script>
+      document.getElementById('footerText').innerHTML = `<hr>${t.footer}`;
+    });
+  </script>
 
 </body>
 </html>
