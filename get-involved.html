@@ -52,73 +52,252 @@
     </div>
   </nav>
 
-<!-- LANGUAGE TOGGLE -->
-<div class="language-toggle text-left pl-4 pt-2">
-  <button id="langToggle" class="lang-btn">Ver em Português</button>
-</div>
+  <!-- LANGUAGE TOGGLE -->
+  <div class="language-toggle text-left pl-4 pt-2">
+    <button id="langToggle" class="lang-btn">Ver em Português</button>
+  </div>
 
-<!-- HEADER -->
- <header class="page-header text-center mt-5 pt-5">
-  <h1>Get Involved</h1>
-</header>
+  <!-- HEADER -->
+  <header class="page-header text-center mt-5 pt-5">
+    <h1 id="pageHeader">Get Involved</h1>
+  </header>
 
   <!-- MAIN CONTENT -->
   <main class="container py-5">
-    <p>Everyone has a role to play in ending human trafficking. 
-    Learn the signs, spread awareness, and support organizations 
-    working to protect victims and prevent exploitation. 
-    Small actions create big change—get involved today.</p>
-    <p><a href="https://theexodusroad.com/">The Exodus Road</a></p>
 
-    <p><a href="https://www.projectrescue.com/">Project Rescue</a></p>
+    <!-- Intro + Support / Advocate Section -->
+    <section class="section-intro">
+      <div class="intro-wrapper">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="intro-heading" id="getInvolvedIntroHeading">
+              Everyone Has a Role to Play
+            </h2>
+            <p class="intro-text" id="getInvolvedIntroParagraph">
+              Everyone has a role to play in ending human trafficking. 
+              Learn the signs, spread awareness, and support organizations 
+              working to protect victims and prevent exploitation. 
+              Small actions create big change—get involved today.
+            </p>
+          </div>
+        </div>
 
-    <p><a href="https://traffickinginstitute.org/">Human Trafficking Institute</a></p>
+        <div class="row mt-4">
+          <!-- Support Survivors -->
+          <div class="col-md-6 mb-4">
+            <h3 class="org-heading" id="supportHeading">Support Survivors</h3>
+            <p class="intro-text" id="supportText">
+              Supporting survivors of human trafficking is one of the most meaningful ways to make a difference. 
+              While it can sometimes be challenging to find a non-profit organization operating in Brazil, 
+              there are anti-trafficking programs that support communities in the region. Contributing to these 
+              programs through donations or volunteer work can help provide long-term care that survivors rely on 
+              as they try to get back on their feet.
+            </p>
+          </div>
 
-    <p><a href="https://asbrad.org.br/trafico-de-pessoas/">ASBRAD</a></p>
+          <!-- Advocate for Change -->
+          <div class="col-md-6 mb-4">
+            <h3 class="org-heading" id="advocateHeading">Advocate for Change</h3>
+            <p class="intro-text" id="advocateText">
+              Advocating for change is just as important. Individuals can participate in International Awareness 
+              Day Against Human Trafficking on January 11th, which is a day dedicated to empowering survivors. 
+              Advocates can also call for stronger protection policies and ensure the voices of those affected 
+              by trafficking are heard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p><a href="https://gaatw.org/who-we-are/about-us">Global Alliance Against Traffic in Women</a></p>
+    <!-- Organizations Section -->
+    <section class="org-section">
+      <div class="text-center mb-4">
+        <h2 class="org-heading" id="orgSectionHeading">Support Trusted Organizations</h2>
+        <p class="org-intro" id="orgSectionIntro">
+          Even if you are far from Brazil, you can still support anti-trafficking work in the region. 
+          Learn more about the organizations below and, when possible, donate or volunteer through 
+          their official websites to help strengthen prevention, rescue, and long-term care for survivors.
+        </p>
+      </div>
+
+      <div class="row">
+        <!-- The Exodus Road -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 org-card">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">The Exodus Road</h3>
+              <p class="card-text" id="exodusDesc">
+                An international nonprofit that partners with local communities and authorities to identify trafficking, 
+                support rescues, and provide survivor care.
+              </p>
+              <a href="https://theexodusroad.com/" 
+                 class="btn btn-sm btn-primary mt-auto"
+                 target="_blank" rel="noopener noreferrer">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Rescue -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 org-card">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Project Rescue</h3>
+              <p class="card-text" id="projectDesc">
+                A global network focused on prevention, safe homes, and long-term healing for individuals and families 
+                affected by sexual exploitation and trafficking.
+              </p>
+              <a href="https://www.projectrescue.com/" 
+                 class="btn btn-sm btn-primary mt-auto"
+                 target="_blank" rel="noopener noreferrer">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Human Trafficking Institute -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 org-card">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">Human Trafficking Institute</h3>
+              <p class="card-text" id="instituteDesc">
+                An organization that works with governments and justice systems to improve investigations, 
+                prosecutions, and data on human trafficking.
+              </p>
+              <a href="https://traffickinginstitute.org/" 
+                 class="btn btn-sm btn-primary mt-auto"
+                 target="_blank" rel="noopener noreferrer">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ASBRAD -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 org-card">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">ASBRAD</h3>
+              <p class="card-text" id="asbradDesc">
+                A Brazil-based organization that offers support, advocacy, and research to protect people affected by 
+                human trafficking and related violence.
+              </p>
+              <a href="https://asbrad.org.br/trafico-de-pessoas/" 
+                 class="btn btn-sm btn-primary mt-auto"
+                 target="_blank" rel="noopener noreferrer">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Global Alliance Against Traffic in Women -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 org-card">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title">
+                Global Alliance Against Traffic in Women
+              </h3>
+              <p class="card-text" id="gaatwDesc">
+                An international alliance of organizations promoting the rights of migrant and trafficked women through 
+                research, advocacy, and survivor-centered support.
+              </p>
+              <a href="https://gaatw.org/who-we-are/about-us" 
+                 class="btn btn-sm btn-primary mt-auto"
+                 target="_blank" rel="noopener noreferrer">
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="container py-4 text-muted small">
+  <footer class="container py-4 text-muted small" id="footerText">
     <hr>
     © 2025 Breaking The Chains · Educational Project
   </footer>
 
-<!-- SCRIPT FOR LANGUAGE TOGGLE -->
-<script>
-  const translations = {
-    en: {
-      button: "Ver em Português",
-      header: "Get Involved",
-      paragraph: "Everyone has a role to play in ending human trafficking. Learn the signs, spread awareness, and support organizations working to protect victims and prevent exploitation. Small actions create big change—get involved today.",
-      footer: "© 2025 Breaking The Chains · Educational Project"
-    },
-    pt: {
-      button: "View in English",
-      header: "Envolva-se",
-      paragraph: "Todos têm um papel a desempenhar no combate ao tráfico humano. Aprenda os sinais, espalhe a conscientização e apoie organizações que trabalham para proteger as vítimas e prevenir a exploração. Pequenas ações geram grandes mudanças—envolva-se hoje.",
-      footer: "© 2025 Breaking The Chains · Projeto Educacional"
-    }
-  };
+  <!-- SCRIPT FOR LANGUAGE TOGGLE -->
+  <script>
+    const translations = {
+  en: {
+    button: "Ver em Português",
+    header: "Get Involved",
 
-  let currentLang = 'en';
-  const button = document.getElementById('langToggle');
+    introHeading: "Everyone Has a Role to Play",
+    introParagraph: "Everyone has a role to play in ending human trafficking. Learn the signs, spread awareness, and support organizations working to protect victims and prevent exploitation. Small actions create big change—get involved today.",
 
-  button.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'pt' : 'en';
-    const lang = translations[currentLang];
+    supportHeading: "Support Survivors",
+    supportText: "Supporting survivors of human trafficking is one of the most meaningful ways to make a difference. While it can sometimes be challenging to find a non-profit organization operating in Brazil, there are anti-trafficking programs that support communities in the region. Contributing to these programs through donations or volunteer work can help provide long-term care that survivors rely on as they try to get back on their feet.",
 
-    // Update text elements
-    document.querySelector('header h1').textContent = lang.header;
-    document.querySelector('main p').textContent = lang.paragraph;
-    document.querySelector('footer').innerHTML = `<hr>${lang.footer}`;
+    advocateHeading: "Advocate for Change",
+    advocateText: "Advocating for change is just as important. Individuals can participate in International Awareness Day Against Human Trafficking on January 11th, which is a day dedicated to empowering survivors. Advocates can also call for stronger protection policies and ensure the voices of those affected by trafficking are heard.",
 
-    // Update button label
-    button.textContent = lang.button;
-  });
-</script>
+    orgSectionHeading: "Support Trusted Organizations",
+    orgSectionIntro: "Even if you are far from Brazil, you can still support anti-trafficking work in the region. Learn more about the organizations below and, when possible, donate or volunteer through their official websites to help strengthen prevention, rescue, and long-term care for survivors.",
+
+    exodusDesc: "An international nonprofit that partners with local communities and authorities to identify trafficking, support rescues, and provide survivor care.",
+    projectDesc: "A global network focused on prevention, safe homes, and long-term healing for individuals and families affected by sexual exploitation and trafficking.",
+    instituteDesc: "An organization that works with governments and justice systems to improve investigations, prosecutions, and data on human trafficking.",
+    asbradDesc: "A Brazil-based organization that offers support, advocacy, and research to protect people affected by human trafficking and related violence.",
+    gaatwDesc: "An international alliance of organizations promoting the rights of migrant and trafficked women through research, advocacy, and survivor-centered support.",
+
+    footer: "© 2025 Breaking The Chains · Educational Project"
+  },
+
+  pt: {
+    button: "View in English",
+    header: "Envolva-se",
+    introHeading: "Todos Têm um Papel a Desempenhar",
+    introParagraph: "Todos têm um papel a desempenhar no combate ao tráfico de pessoas. Aprenda os sinais, compartilhe informações confiáveis e apoie organizações que trabalham para proteger as vítimas e prevenir a exploração. Pequenas ações geram grandes mudanças—envolva-se hoje.",
+    supportHeading: "Apoie os Sobreviventes",
+    supportText: "Apoiar sobreviventes do tráfico de pessoas é uma das maneiras mais significativas de fazer a diferença. Embora às vezes seja difícil encontrar organizações sem fins lucrativos atuando no Brasil, existem programas de combate ao tráfico que apoiam comunidades na região. Contribuir para esses programas por meio de doações ou trabalho voluntário pode ajudar a fornecer o cuidado de longo prazo do qual os sobreviventes precisam ao reconstruir suas vidas.",
+    advocateHeading: "Defenda a Mudança",
+    advocateText: "Defender mudanças é igualmente importante. Qualquer pessoa pode participar do Dia Internacional de Conscientização contra o Tráfico de Pessoas, em 11 de janeiro, uma data dedicada ao empoderamento dos sobreviventes. Defensores também podem solicitar políticas de proteção mais fortes e garantir que as vozes das pessoas afetadas pelo tráfico sejam ouvidas.",
+    orgSectionHeading: "Apoie Organizações Confiáveis",
+    orgSectionIntro: "Mesmo estando longe do Brasil, você ainda pode apoiar o trabalho de combate ao tráfico na região. Conheça as organizações abaixo e, quando possível, doe ou seja voluntário por meio de seus sites oficiais para fortalecer os esforços de prevenção, resgate e cuidado de longo prazo aos sobreviventes.",
+    exodusDesc: "Uma organização internacional que trabalha com comunidades locais e autoridades para identificar o tráfico, apoiar operações de resgate e oferecer cuidado a sobreviventes.",
+    projectDesc: "Uma rede global focada em prevenção, abrigos seguros e recuperação de longo prazo para indivíduos e famílias afetados pela exploração sexual e pelo tráfico.",
+    instituteDesc: "Uma organização que atua com governos e sistemas de justiça para melhorar investigações, processos judiciais e dados sobre tráfico de pessoas.",
+    asbradDesc: "Uma organização brasileira que oferece apoio, advocacy e pesquisa para proteger pessoas afetadas pelo tráfico de pessoas e pela violência relacionada.",
+    gaatwDesc: "Uma aliança internacional de organizações que promovem os direitos de mulheres migrantes e traficadas por meio de pesquisa, advocacy e apoio centrado na sobrevivente.",
+    footer: "© 2025 Breaking The Chains · Projeto Educacional"
+  }
+};
+
+// LANGUAGE SWITCH
+let currentLang = 'en';
+document.getElementById('langToggle').addEventListener('click', () => {
+  currentLang = currentLang === 'en' ? 'pt' : 'en';
+  const t = translations[currentLang];
+
+  document.getElementById('pageHeader').textContent = t.header;
+  document.getElementById('getInvolvedIntroHeading').textContent = t.introHeading;
+  document.getElementById('getInvolvedIntroParagraph').textContent = t.introParagraph;
+  document.getElementById('supportHeading').textContent = t.supportHeading;
+  document.getElementById('supportText').textContent = t.supportText;
+  document.getElementById('advocateHeading').textContent = t.advocateHeading;
+  document.getElementById('advocateText').textContent = t.advocateText;
+  document.getElementById('orgSectionHeading').textContent = t.orgSectionHeading;
+  document.getElementById('orgSectionIntro').textContent = t.orgSectionIntro;
+
+  // Organization card descriptions
+  document.getElementById('exodusDesc').textContent = t.exodusDesc;
+  document.getElementById('projectDesc').textContent = t.projectDesc;
+  document.getElementById('instituteDesc').textContent = t.instituteDesc;
+  document.getElementById('asbradDesc').textContent = t.asbradDesc;
+  document.getElementById('gaatwDesc').textContent = t.gaatwDesc;
+  document.getElementById('footerText').innerHTML = `<hr>${t.footer}`;
+  document.getElementById('langToggle').textContent = t.button;
+});
+  </script>
 
 </body>
 </html>
