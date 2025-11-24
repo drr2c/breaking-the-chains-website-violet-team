@@ -52,69 +52,266 @@
     </div>
   </nav>
 
-<!-- LANGUAGE TOGGLE BUTTON -->
-<div class="language-toggle text-left pl-4 pt-2">
-  <button id="langToggle" class="lang-btn">Ver em Português</button>
-</div>
+  <!-- LANGUAGE TOGGLE BUTTON -->
+  <div class="language-toggle text-left pl-4 pt-2">
+    <button id="langToggle" class="lang-btn">Ver em Português</button>
+  </div>
 
-<!-- HEADER -->
-<header class="page-header text-center mt-5 pt-5">
-  <h1 id="dataHeader">Data: Trends & Indicators</h1>
-</header>
+  <!-- HEADER -->
+  <header class="page-header text-center mt-5 pt-5">
+    <h1 id="dataHeader">Data: Trends & Indicators</h1>
+  </header>
 
-<!-- MAIN CONTENT -->
-<main class="container py-5">
-  <section class="text-center my-5">
-    <img
-      id="dataImage"
-      src="images/human-trafficking-warning-signs.png"
-      alt="Infographic illustrating warning signs of human trafficking in Brazil."
-      class="img-fluid rounded shadow-sm">
-  </section>
-</main>
+  <!-- MAIN CONTENT -->
+  <main class="container py-5">
 
-<!-- FOOTER -->
-<footer class="container py-4 text-muted small" id="footerText">
-  <hr>
-  © 2025 Breaking The Chains · Educational Project
-</footer>
+    <!-- INTRO PARAGRAPH -->
+    <section class="text-center my-5">
+      <p id="introText" class="intro-text mb-0" style="max-width: 800px; margin: 0 auto;">
+      Human trafficking in Brazil is caused by regional and demographic factors.
+      </p>
+    </section>
 
-<!-- LANGUAGE TOGGLE SCRIPT -->
-<script>
-const translations = {
-  en: {
-    button: "Ver em Português",
-    header: "Data: Trends & Indicators",
-    imgAlt: "Infographic illustrating warning signs of human trafficking in Brazil.",
-    footer: "© 2025 Breaking The Chains · Educational Project"
-  },
 
-  pt: {
-    button: "View in English",
-    header: "Dados: Tendências e Indicadores",
-    imgAlt: "Infográfico ilustrando sinais de alerta do tráfico de pessoas no Brasil.",
-    footer: "© 2025 Breaking The Chains · Projeto Educacional"
-  }
-};
+    <!-- WARNING SIGNS SECTION (TEXT LEFT, IMAGE RIGHT) -->
+    <section class="mb-5">
+      <div class="intro-wrapper p-4 shadow-sm rounded" style="background:#F5F5F5;">
+        <div class="row align-items-center">
+          <!-- Text -->
+          <div class="col-md-6 mb-3 mb-md-0">
+            <h3 class="intro-heading mb-3" id="warningHeader">
+              Warning Signs & Demographic Risks
+            </h3>
+            <p id="warningText" class="intro-text mb-0">
+              Demographic data shows who is most at risk. Men between 18 and 29 are often targeted for forced labor.
+              Women and girls aged 15–22 are affected by sexual exploitation. Reports from organizations like the UNODC
+              discuss plans in action to strengthen prevention efforts. Here is an infographic that highlights some of
+              the warning signs of human trafficking.
+            </p>
+          </div>
 
-let currentLang = "en";
-const btn = document.getElementById("langToggle");
+          <!-- Image -->
+          <div class="col-md-6 text-center">
+            <img
+              id="warningImg"
+              src="images/human-trafficking-warning-signs.png"
+              alt="Infographic illustrating warning signs of human trafficking in Brazil."
+              class="img-fluid rounded shadow-sm"
+              style="max-width: 60%; cursor: pointer;"
+              data-toggle="modal"
+              data-target="#imageModal"
+              data-full="images/human-trafficking-warning-signs.png">
+          </div>
+        </div>
+      </div>
+    </section>
 
-btn.addEventListener("click", () => {
-  currentLang = currentLang === "en" ? "pt" : "en";
-  const t = translations[currentLang];
+    <!-- VULNERABILITY MAP SECTION (IMAGE LEFT, TEXT RIGHT) -->
+    <section class="mb-5">
+      <div class="intro-wrapper p-4 shadow-sm rounded" style="background:#F5F5F5;">
+        <div class="row align-items-center">
+          <!-- Image -->
+          <div class="col-md-6 text-center mb-3 mb-md-0">
+            <img
+              id="vulnerabilityImg"
+              src="images/Vulnerability EN.png"
+              alt="Map illustrating which Brazilian states are most vulnerable to trafficking."
+              class="img-fluid rounded shadow-sm"
+              style="max-width: 60%; cursor: pointer;"
+              data-toggle="modal"
+              data-target="#imageModal"
+              data-full="images/Vulnerability EN.png">
+          </div>
 
-  btn.textContent = t.button;
-  document.getElementById("dataHeader").textContent = t.header;
-  document.getElementById("dataImage").alt = t.imgAlt;
-  document.getElementById("footerText").innerHTML = `<hr>${t.footer}`;
+          <!-- Text -->
+          <div class="col-md-6">
+            <h3 class="intro-heading mb-3" id="vulnerabilityHeader">
+              Where Vulnerability Is Highest
+            </h3>
+            <p id="vulnerabilityText" class="intro-text mb-0">
+              Geographics play a significant role. This map highlights the most affected states.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   document.getElementById("dataImage").src = 
-    currentLang === "en"
-      ? "images/human-trafficking-warning-signs.png"
-      : "images/human-trafficking-warning-signs-pt.png";
-});
-</script>
+    <!-- TRI-BORDER SECTION (TEXT LEFT, IMAGE RIGHT) -->
+    <section class="mb-5">
+      <div class="intro-wrapper p-4 shadow-sm rounded" style="background:#F5F5F5;">
+        <div class="row align-items-center">
+          <!-- Text -->
+          <div class="col-md-6 mb-3 mb-md-0">
+            <h3 class="intro-heading mb-3" id="triborderHeader">
+              The Tri-Border Region
+            </h3>
+            <p id="triborderText" class="intro-text mb-0">
+              Brazil's borders, which touch ten neighboring countries, also create many transit points that traffickers
+              exploit. This is particularly evident in the Tri-border region, where Brazil, Paraguay, and Argentina meet.
+              The tri-border area is known as a hotspot for activity.
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="col-md-6 text-center">
+            <img
+              id="triborderImg"
+              src="images/Tri-Border EN.png"
+              alt="Map illustrating trafficking risks in the Tri-Border area."
+              class="img-fluid rounded shadow-sm"
+              style="max-width: 60%; cursor: pointer;"
+              data-toggle="modal"
+              data-target="#imageModal"
+              data-full="images/Tri-Border EN.png">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL SUMMARY IN GRADIENT BOX (REUSES ACTION-BANNER STYLES) -->
+    <section class="action-banner mt-5">
+      <div class="banner-overlay text-center">
+        <p id="finalText" class="intro-text mb-0">
+          These key facts paint a picture of trafficking in Brazil. The dynamics reveal the severity of the issues but
+          also emphasize the urgency to find successful intervention and prevention strategies.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="container py-4 text-muted small" id="footerText">
+    <hr>
+    © 2025 Breaking The Chains · Educational Project
+  </footer>
+
+  <!-- UNIVERSAL IMAGE MODAL -->
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content bg-dark border-0">
+        <button type="button" class="close text-white ml-auto mr-2 mt-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body p-2">
+          <img id="modalImage" src="" class="img-fluid rounded" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LANGUAGE TOGGLE + MODAL SCRIPT -->
+  <script>
+    const translations = {
+      en: {
+        button: "Ver em Português",
+        header: "Data: Trends & Indicators",
+
+        intro: "Human trafficking in Brazil is caused by regional and demographic factors.",
+
+        warningHeader: "Warning Signs & Demographic Risks",
+        warningText:
+          "Demographic data shows who is most at risk. Men between 18 and 29 are often targeted for forced labor. Women and girls aged 15–22 are affected by sexual exploitation. Reports from organizations like the UNODC discuss plans in action to strengthen prevention efforts. Here is an infographic that highlights some of the warning signs of human trafficking.",
+        warningImg: "images/human-trafficking-warning-signs.png",
+        warningAlt: "Infographic illustrating warning signs of human trafficking in Brazil.",
+
+        vulnerabilityHeader: "Where Vulnerability Is Highest",
+        vulnerabilityText:
+          "Geographics play a significant role. This map highlights the most affected states.",
+        vulnerabilityImg: "images/Vulnerability EN.png",
+        vulnerabilityAlt: "Map illustrating which Brazilian states are most vulnerable to trafficking.",
+
+        triborderHeader: "The Tri-Border Region",
+        triborderText:
+          "Brazil's borders, which touch ten neighboring countries, also create many transit points that traffickers exploit. This is particularly evident in the Tri-border region, where Brazil, Paraguay, and Argentina meet. The tri-border area is known as a hotspot for activity.",
+        triborderImg: "images/Tri-Border EN.png",
+        triborderAlt: "Map illustrating trafficking risks in the Tri-Border area.",
+
+        final:
+          "These key facts paint a picture of trafficking in Brazil. The dynamics reveal the severity of the issues but also emphasize the urgency to find successful intervention and prevention strategies.",
+
+        footer: "© 2025 Breaking The Chains · Educational Project"
+      },
+
+      pt: {
+        button: "View in English",
+        header: "Dados: Tendências e Indicadores",
+
+        intro: "O tráfico de pessoas no Brasil é causado por fatores regionais e demográficos.",
+
+        warningHeader: "Sinais de Alerta e Riscos Demográficos",
+        warningText:
+          "Os dados demográficos mostram quem está mais vulnerável. Homens entre 18 e 29 anos são frequentemente alvos de trabalho forçado. Mulheres e meninas de 15 a 22 anos são afetadas pela exploração sexual. Relatórios de organizações como o UNODC descrevem planos em ação para fortalecer os esforços de prevenção. Aqui está um infográfico que destaca alguns dos sinais de alerta do tráfico de pessoas.",
+        warningImg: "images/human-trafficking-warning-signs-pt.png",
+        warningAlt: "Infográfico ilustrando sinais de alerta do tráfico de pessoas no Brasil.",
+
+        vulnerabilityHeader: "Onde a Vulnerabilidade é Mais Alta",
+        vulnerabilityText:
+          "A geografia desempenha um papel significativo. Este mapa destaca os estados mais afetados.",
+        vulnerabilityImg: "images/Vulnerability PT.png",
+        vulnerabilityAlt:
+          "Mapa que mostra quais estados brasileiros são mais vulneráveis ao tráfico de pessoas.",
+
+        triborderHeader: "A Região da Tríplice Fronteira",
+        triborderText:
+          "As fronteiras do Brasil, que fazem divisa com dez países, criam muitos pontos de trânsito explorados por traficantes. Isso é especialmente evidente na região da Tríplice Fronteira, onde Brasil, Paraguai e Argentina se encontram. A área é conhecida como um ponto crítico de atividade.",
+        triborderImg: "images/Tri-Border PT.png",
+        triborderAlt: "Mapa ilustrando os riscos de tráfico de pessoas na região da Tríplice Fronteira.",
+
+        final:
+          "Esses fatos essenciais revelam o panorama do tráfico no Brasil. As dinâmicas mostram a gravidade do problema e reforçam a urgência de encontrar estratégias eficazes de intervenção e prevenção.",
+
+        footer: "© 2025 Breaking The Chains · Projeto Educacional"
+      }
+    };
+
+    let currentLang = "en";
+    const btn = document.getElementById("langToggle");
+
+    btn.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "pt" : "en";
+      const t = translations[currentLang];
+
+      btn.textContent = t.button;
+      document.getElementById("dataHeader").textContent = t.header;
+
+      document.getElementById("introText").textContent = t.intro;
+
+      document.getElementById("warningHeader").textContent = t.warningHeader;
+      document.getElementById("warningText").textContent = t.warningText;
+      const warningImg = document.getElementById("warningImg");
+      warningImg.src = t.warningImg;
+      warningImg.alt = t.warningAlt;
+      warningImg.setAttribute("data-full", t.warningImg);
+
+      document.getElementById("vulnerabilityHeader").textContent = t.vulnerabilityHeader;
+      document.getElementById("vulnerabilityText").textContent = t.vulnerabilityText;
+      const vulImg = document.getElementById("vulnerabilityImg");
+      vulImg.src = t.vulnerabilityImg;
+      vulImg.alt = t.vulnerabilityAlt;
+      vulImg.setAttribute("data-full", t.vulnerabilityImg);
+
+      document.getElementById("triborderHeader").textContent = t.triborderHeader;
+      document.getElementById("triborderText").textContent = t.triborderText;
+      const triImg = document.getElementById("triborderImg");
+      triImg.src = t.triborderImg;
+      triImg.alt = t.triborderAlt;
+      triImg.setAttribute("data-full", t.triborderImg);
+
+      document.getElementById("finalText").textContent = t.final;
+
+      document.getElementById("footerText").innerHTML = `<hr>${t.footer}`;
+    });
+
+    // MODAL: load full-size image when a thumbnail is clicked
+    $('#imageModal').on('show.bs.modal', function (event) {
+      const thumb = $(event.relatedTarget);
+      const fullSrc = thumb.data('full');
+      const altText = thumb.attr('alt') || '';
+      $('#modalImage').attr('src', fullSrc);
+      $('#modalImage').attr('alt', altText);
+    });
+  </script>
 
 </body>
 </html>
