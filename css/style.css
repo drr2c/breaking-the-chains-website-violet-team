@@ -74,12 +74,18 @@ h1 {
     padding: 10px 20px;
     border-radius: 5px;
 }
+.page-header {
+  margin-top: 2rem !important;   
+  padding-top: 1rem !important;  
+  padding-bottom: 0rem !important;
+  margin-bottom: 0rem !important;
+}
 
 .page-header h1 {
     font-family: 'Anton', sans-serif;
     color: #0A3D62;
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 body {
