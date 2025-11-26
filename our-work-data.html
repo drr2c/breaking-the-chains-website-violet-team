@@ -304,13 +304,15 @@
     });
 
     // MODAL: load full-size image when a thumbnail is clicked
-    $('#imageModal').on('show.bs.modal', function (event) {
-      const thumb = $(event.relatedTarget);
-      const fullSrc = thumb.data('full');
-      const altText = thumb.attr('alt') || '';
-      $('#modalImage').attr('src', fullSrc);
-      $('#modalImage').attr('alt', altText);
-    });
+$('#imageModal').on('show.bs.modal', function (event) {
+  const thumb = $(event.relatedTarget);
+  // Use attr instead of .data so we always get the updated value
+  const fullSrc = thumb.attr('data-full');
+  const altText = thumb.attr('alt') || '';
+  $('#modalImage').attr('src', fullSrc);
+  $('#modalImage').attr('alt', altText);
+});
+
   </script>
 
 </body>
