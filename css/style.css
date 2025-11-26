@@ -472,16 +472,6 @@ section img {
   font-style: italic;
 }
 
-/* Raise navbar above language toggle */
-.navbar {
-  z-index: 4000 !important;
-}
-
-/* Raise dropdown menu above everything */
-.navbar .dropdown-menu {
-  z-index: 5000 !important;
-}
-
 /* Proper modal layering above navbar */
 .modal-backdrop {
   z-index: 5000 !important;   /* backdrop underneath modal */
