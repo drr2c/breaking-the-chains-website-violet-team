@@ -474,7 +474,7 @@ section img {
 
 /* Proper modal layering above navbar */
 .modal-backdrop {
-  z-index: 5000 !important;   /* backdrop underneath modal */
+  z-index: 5500 !important;   /* backdrop underneath modal */
 }
 
 .modal {
