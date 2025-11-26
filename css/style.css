@@ -482,10 +482,21 @@ section img {
   z-index: 5000 !important;
 }
 
-/* Make modals sit above the navbar and dropdown */
-.modal,
+/* Proper modal layering above navbar */
 .modal-backdrop {
-  z-index: 6000 !important;
+  z-index: 5000 !important;   /* backdrop underneath modal */
+}
+
+.modal {
+  z-index: 6000 !important;   /* modal above backdrop */
+}
+
+.modal-dialog {
+  z-index: 6001 !important;   /* dialog above modal wrapper */
+}
+
+.modal-content {
+  z-index: 6002 !important;   /* content above everything */
 }
 
 /* On small screens, push the modal a bit down from the very top */
