@@ -471,3 +471,33 @@ section img {
   color: #555;
   font-style: italic;
 }
+
+/* Raise navbar above language toggle */
+.navbar {
+  z-index: 4000 !important;
+}
+
+/* Raise dropdown menu above everything */
+.navbar .dropdown-menu {
+  z-index: 5000 !important;
+}
+
+/* Make modals sit above the navbar and dropdown */
+.modal,
+.modal-backdrop {
+  z-index: 6000 !important;
+}
+
+/* On small screens, push the modal a bit down from the very top */
+@media (max-width: 767.98px) {
+  .modal-dialog {
+    margin: 4rem 0.75rem 1rem;
+  }
+}
+
+/* Keep modal image fully visible on screen */
+#modalImage {
+  max-height: 80vh;   /* at most 80% of the viewport height */
+  width: 100%;
+  object-fit: contain;
+}
