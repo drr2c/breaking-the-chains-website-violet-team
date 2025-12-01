@@ -452,6 +452,16 @@ section img {
   min-height: 600px !important;
 }
 
+.story-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.story-card .citation {
+  margin-top: auto;
+}
+
 /* Card Scroll Reveal Animation for Stories Page */
 .fade-in-on-scroll {
   opacity: 0;
